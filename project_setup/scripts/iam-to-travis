@@ -59,8 +59,7 @@ def creds_from_terraform():
         key_id, secret = creds_from_child(child_module)
         if key_id:
             return key_id, secret
-    else:
-        return None, None
+    return None, None
 
 
 def wrap_for_yml(s, indent=6, width=75):
